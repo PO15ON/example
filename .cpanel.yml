@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/repo
+    - export DEPLOYPATH=/home/api.alwa7y.com
     - /bin/cp -R example $DEPLOYPATH
