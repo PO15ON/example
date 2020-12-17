@@ -1,4 +1,5 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/api.alwa7y.com/
-    - /bin/cp -R public_html $DEPLOYPATH
+    - export DEPLOYPATH=/home/alwa7yc/api.alwa7y.com/public_html
+    - /bin/cp -R src $DEPLOYPATH
