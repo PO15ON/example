@@ -1,3 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/repo/example
+    - export DEPLOYPATH=/home/repo
+    - /bin/cp -R example $DEPLOYPATH
