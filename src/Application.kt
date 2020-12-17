@@ -50,7 +50,8 @@ val header1 = HeaderItem(
 )
 
 fun main(args: Array<String>) {
-    val server = embeddedServer(Netty, port = 8080) {
+    val port = System.getenv("PORT")?.toInt() ?: 8080
+    val server = embeddedServer(Netty, port = port) {
         install(StatusPages){
             this.exception<Throwable>{e->
                 call.respondText(e.localizedMessage, ContentType.Text.Plain)
