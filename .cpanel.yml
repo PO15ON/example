@@ -1,4 +1,3 @@
----
 deployment:
   tasks:
     - export DEPLOYPATH=/home/alwa7yc/api.alwa7y.com/public_html
